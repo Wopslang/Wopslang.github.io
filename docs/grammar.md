@@ -255,29 +255,29 @@ Example:
 
 <!-- Link -->
 
-[Introduction]: https://wopslang.github.io/Wops/grammar.html#introduction
-[Notation]: https://wopslang.github.io/Wops/grammar.html#notation
-[Source Code Representation]: https://wopslang.github.io/Wops/grammar.html#source-code-representation
-[Lexical Elements]: https://wopslang.github.io/Wops/grammar.html#lexical-elements
-[Types]: https://wopslang.github.io/Wops/grammar.html#types
-[Variables]: https://wopslang.github.io/Wops/grammar.html#variables
-[Expressions]: https://wopslang.github.io/Wops/grammar.html#expressions
-[Statesments]: https://wopslang.github.io/Wops/grammar.html#statesments
-[if]: https://wopslang.github.io/Wops/grammar.html#if
-[for]: https://wopslang.github.io/Wops/grammar.html#for
-[Builtin functions]: https://wopslang.github.io/Wops/grammar.html#builtin-functions
-[Error Handling]: https://wopslang.github.io/Wops/grammar.html#error-handling
-[Tokens]: https://wopslang.github.io/Wops/grammar.html#tokens
-[Predeclared Identifiers]: https://wopslang.github.io/Wops/grammar.html#predeclared-identifiers
+[Introduction]: https://wopslang.github.io/docs/grammar/#introduction
+[Notation]: https://wopslang.github.io/docs/grammar/#notation
+[Source Code Representation]: https://wopslang.github.io/docs/grammar/#source-code-representation
+[Lexical Elements]: https://wopslang.github.io/docs/grammar/#lexical-elements
+[Types]: https://wopslang.github.io/docs/grammar/#types
+[Variables]: https://wopslang.github.io/docs/grammar/#variables
+[Expressions]: https://wopslang.github.io/docs/grammar/#expressions
+[Statesments]: https://wopslang.github.io/docs/grammar/#statesments
+[if]: https://wopslang.github.io/docs/grammar/#if
+[for]: https://wopslang.github.io/docs/grammar/#for
+[Builtin functions]: https://wopslang.github.io/docs/grammar/#builtin-functions
+[Error Handling]: https://wopslang.github.io/docs/grammar/#error-handling
+[Tokens]: https://wopslang.github.io/docs/grammar/#tokens
+[Predeclared Identifiers]: https://wopslang.github.io/docs/grammar/#predeclared-identifiers
 [UTF-8]: https://en.wikipedia.org/wiki/UTF-8
-[Characters]: https://wopslang.github.io/Wops/grammar.html#characters
-[Letter and Digits]: https://wopslang.github.io/Wops/grammar.html#letter-and-digits
-[Comments]: https://wopslang.github.io/Wops/grammar.html#comments
-[Semicolons]: https://wopslang.github.io/Wops/grammar.html#semicolons
-[Identifiers]: https://wopslang.github.io/Wops/grammar.html#identifiers
-[Keywords]: https://wopslang.github.io/Wops/grammar.html#keywords
-[Operators and Punctuation]: https://wopslang.github.io/Wops/grammar.html#operators-and-punctuation
-[Integer Literal]: https://wopslang.github.io/Wops/grammar.html#integer-literal
-[Floating-point Literal]: https://wopslang.github.io/Wops/grammar.html#floating-point-literal
-[Rune Literal]: https://wopslang.github.io/Wops/grammar.html#rune-lineral
-[String Literal]: https://wopslang.github.io/Wops/grammar.html#string-lineral
+[Characters]: https://wopslang.github.io/docs/grammar/#characters
+[Letter and Digits]: https://wopslang.github.io/docs/grammar/#letter-and-digits
+[Comments]: https://wopslang.github.io/docs/grammar/#comments
+[Semicolons]: https://wopslang.github.io/docs/grammar/#semicolons
+[Identifiers]: https://wopslang.github.io/docs/grammar/#identifiers
+[Keywords]: https://wopslang.github.io/docs/grammar/#keywords
+[Operators and Punctuation]: https://wopslang.github.io/docs/grammar/#operators-and-punctuation
+[Integer Literal]: https://wopslang.github.io/docs/grammar/#integer-literal
+[Floating-point Literal]: https://wopslang.github.io/docs/grammar/#floating-point-literal
+[Rune Literal]: https://wopslang.github.io/docs/grammar/#rune-lineral
+[String Literal]: https://wopslang.github.io/docs/grammar/#string-lineral
