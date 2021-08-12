@@ -279,5 +279,5 @@ Example:
 [Operators and Punctuation]: https://wopslang.github.io/docs/grammar/#operators-and-punctuation
 [Integer Literal]: https://wopslang.github.io/docs/grammar/#integer-literal
 [Floating-point Literal]: https://wopslang.github.io/docs/grammar/#floating-point-literal
-[Rune Literal]: https://wopslang.github.io/docs/grammar/#rune-lineral
-[String Literal]: https://wopslang.github.io/docs/grammar/#string-lineral
+[Rune Literal]: https://wopslang.github.io/docs/grammar/#rune-literal
+[String Literal]: https://wopslang.github.io/docs/grammar/#string-literal
