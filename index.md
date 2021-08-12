@@ -2,7 +2,6 @@
 layout: default
 title: Home
 description: "Wopslang Documentation"
-permalink: /
 ---
 
 # 📔 Documentation
