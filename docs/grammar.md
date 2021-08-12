@@ -340,3 +340,5 @@ To find syntax defination of `Expression`, see [Operators] for more.
 [Rune Literal]: https://wopslang.github.io/docs/grammar/#rune-literal
 [String Literal]: https://wopslang.github.io/docs/grammar/#string-literal
 [Boolean Literal]: https://wopslang.github.io/docs/grammar/#boolean-literal
+[Blocks]: https://github.com/Wopslang/Wops/blob/main/doc/grammar.md#blocks
+[Declarations]: https://github.com/Wopslang/Wops/blob/main/doc/grammar.md#declarations
