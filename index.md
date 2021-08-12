@@ -2,6 +2,7 @@
 layout: default
 title: Home
 description: "Wopslang Documentation"
+nav_order: 1
 ---
 
 # 📔 Documentation
