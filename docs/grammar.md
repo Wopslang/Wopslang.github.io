@@ -51,7 +51,7 @@ So, make sure to check this page when you updated Wopslang to the newest version
 
 ## Notation
 
-The syntax is specified using Extended Backus-Naur Form (EBNF).
+The syntax is specified using Extended Backus-Naur Form (text).
 
 ## Source Code Representation
 
@@ -59,7 +59,7 @@ The syntax is specified using Extended Backus-Naur Form (EBNF).
 
 ### Characters
 
-```ebnf
+```text
 newline    = /* U+000A */ .
 uni_char   = /* an arbitrary Unicode code point except newline */ .
 uni_letter = /* a Unicode code point classified as Letter */ .
@@ -68,7 +68,7 @@ uni_digit  = /* a Unicode code point classified as Number, decimal digit /* .
 
 ### Letter and digits
 
-```ebnf
+```text
 type      = "int" | "double" | "bool" | "string" .
 letter    = uni_letter | "_" .
 digit     = "0" ... "9" .
@@ -110,7 +110,7 @@ A newline or end of file may be trigger by the insertion of a semicolon(`;`). Se
 
 Identifiers name program entities such as variables and types. An identifier is a sequence of one or more letters and digits. The first character in an identifier must be a letter.
 
-```ebnf
+```text
 identifiers = letter { letter | uni_digit } .
 ```
 
@@ -156,7 +156,7 @@ An integer literal is a sequence of digits representing an integer constant.
 
 > In version v0.1, only decimal is allowed to use.
 
-```ebnf
+```text
 integer_lit    = "0" | ( "1" … "9" ) [ decimal_digits ] .
 decimal_digits = { digit } .
 ```
@@ -179,7 +179,7 @@ a56bc // (x)
 
 boolean literal is a bit representing boolean constant: *true, and false*.
 
-```ebnf
+```text
 bool_lit = "0" |  "1".
 ```
 
@@ -187,7 +187,7 @@ bool_lit = "0" |  "1".
 
 A floating-point literal is a decimal representation of a floating-point constant. A decimal floating-point literal consists of an integer part (decimal digits), a decimal point, a fractional part (decimal digits).
 
-```ebnf
+```text
 float_lit = integer_lit | integer_lit "." decimal_digits
 ```
 
@@ -222,7 +222,7 @@ After a backslash, certain single-character escapes represent special values:
 |`\'`|U+0007|single quote|
 |`\"`|U+0007|double quote|
 
-```ebnf
+```text
 rune_lit      = "'" uni_value "'" .
 uni_value     = uni_char | escaped_char .
 escaped_char  = `\` ( "a" | "b" | "f" | "n" | "r" | "t" | "v" | `\` | "'" | `"` ) .
@@ -232,7 +232,7 @@ escaped_char  = `\` ( "a" | "b" | "f" | "n" | "r" | "t" | "v" | `\` | "'" | `"` 
 
 A string literal represents a string constant obtained from concatenating a sequence of characters.
 
-```ebnf
+```text
 string_lit = `"` { unicode_value } `"` .
 ```
 
@@ -258,7 +258,7 @@ There are four kind of type: *Integer, Floating-Point, String, and Boolean*. And
 |string|String|[same with string literal][String Literal]|
 |bool|Boolean|[same with boolean literal][Boolean Literal]|
 
-```ebnf
+```text
 Type = "int" | "double" | "string" | "bool" .
 ```
 
@@ -281,7 +281,7 @@ string soo = poo
 
 A block is an empty sequence of declarations and statements within matching brace({,})s.
 
-```ebnf
+```text
 Block = "{" Statements "}" .
 Statements = { Statement } .
 ```
@@ -293,7 +293,7 @@ if and for expression is considered to be in its own block.
 A declaration bind *identifiers* and *value* to a constant or [variable][Variables].
 Every identifier in a program must be declared, and no identifier may be declared twice in the same block. See [Variables] to get more information.
 
-```ebnf
+```text
 Declaration = ConstDel | VarDel .
 ConstDel = "const" Type identifiers "=" Expression .
 VarDel = Type identifiers [ "=" Expression ] .
