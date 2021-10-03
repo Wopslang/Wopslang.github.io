@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.monserrat {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.inter {
+	font-family: 'Inter', sans-serif;
+}
+
+.white {
+	color: whitesmoke;
+}
+.white-bg {
+	background-color: whitesmoke;
+}
+
+.black-bg {
+	background-color: #303134;
+}
+
+.black {
+	color: #303134;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.wopsbg-bg {
+	background-color: #E4007F;
+}
+
+.border-white {
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: whitesmoke;
+	color: transparent;
+}
+
+.vl {
+	border-left: 6px solid whitesmoke;
+	height: 500px;
+}
+
+.hover:hover {
+	color: #4c76c4
+}
+
+.sublime-vivid-full{
+	background: #FC466B
+}
+.sublime-vivid {
+	background: #FC466B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
