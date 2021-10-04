@@ -17,26 +17,36 @@
 	</div>
 	<div style="display: flex; align-items: center; flex-direction: column; padding-top: 100px;">
 		<h2>Code</h2>
-		<textarea id="code" rows="20" cols="100"></textarea>
+		<textarea onkeyup="codein(this)" id="code" rows="20" cols="100"></textarea>
 		<h2>Stdin</h2>
-		<textarea id="stdin" rows="2" cols="100"></textarea>
-		<button style="margin-top: 10px;" onclick="run()">Run</button>
-		<p>Due to the technical issue, you should attach ; symbol every line</p>
+		<textarea onkeyup="stdinin(this)" id="stdin" rows="2" cols="100"></textarea>
+		<button style="margin-top: 10px;" onclick="" disabled>Run</button>
 		<script>
 			let code = '';
 			let stdin = '';
 
+			codein = (ele) => {
+				code = ele.value;
+			}
+
+			stdinin = (ele) => {
+				stdin = ele.value;
+			}
+
 			run = () => {
-				code = document.getElementById("code").value;
-				stdin = document.getElementById("stdin").value;
-				code = code.replace(/\\/, "\\\\");
 				code = code.replace(/\+/g, "%2b");
 				stdin = stdin.replace(/\+/g, "%2b");
-				stdin = stdin.replace(/\\/, "\\\\");
+
+				let param = {
+					"code": `${code}`,
+					"stdin": `${stdin}`,
+				}
+
 				const request = new XMLHttpRequest();
-				const url = `http://54.180.53.84/?code=${code}&stdin=${stdin}`;
-				request.open("GET", url);
-				request.send();
+				const url = `http://54.180.53.84/run`;
+				request.open("POST", url);
+				request.setRequestHeader("Content-Type", "application/json")
+				request.send(param);
 	
 				request.onload = (e) => {
 					alert(request.response);
