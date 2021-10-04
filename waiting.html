@@ -22,7 +22,29 @@
 <body style="margin: 0; padding: 0; background-color: #111111; color: whitesmoke;">
         <div style="font-family: 'Gmarket Sans'; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
                 <h1 style="font-size: 5em;">Wopslang v0.1 alpha</h1>
-                <a href="https://github.com/Wopslang/Wops" style="font-size: 1.5em; text-decoration: none; color: whitesmoke;">Release on 2021. 10. 04 12:00 AM (KST)</p>
+				<h1 style="font-size: 3em;" id="countdown"></h1>
+                <a href="https://github.com/Wopslang/Wops" style="font-size: 1.5em; text-decoration: none; color: whitesmoke;">Release at 2021. 10. 04 12:00 AM (KST)</p>
         </div>
+		<script>
+		var countDownDate = new Date("Oct 4, 2021 12:00:00").getTime();
+
+		var x = setInterval(function() {
+			var now = new Date().getTime();
+
+			var distance = countDownDate - now;
+
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+			+ minutes + "m " + seconds + "s ";
+
+			if (distance < 0) {
+				clearInterval(x);
+			}
+		}, 1000);
+		</script>
 </body>
 </html>
