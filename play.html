@@ -9,7 +9,7 @@
 </head>
 <body class="" style="margin: 0; padding: 0; width: 100vw; height: 100vh;">
 	<div class="wopsbg-bg white" width="100%" height="70px" style="margin: 0; padding: 0; position:fixed; display: flex; right: 0; left:0; padding-left: 10vw; padding-right: 10vw; padding-top: 10px; padding-bottom: 10px; align-items: center;">
-		<a href="./index.html"><img style="padding-right: 35vw;" src="logo2.png" height="50px"></a>
+		<a href="./index.html"><img style="padding-right: 35vw;" src="img/logo2.png" height="50px"></a>
 		<a style="padding-right: 5vw" href="https://github.com/Wopslang/Wops/tree/main/doc">Documents</a>
 		<a style="padding-right: 5vw" href="downloads.html">Downloads</a>
 		<a style="padding-right: 5vw" href="https://github.com/Wopslang/Wops/">The Project</a>
@@ -20,7 +20,7 @@
 		<textarea onkeyup="codein(this)" id="code" rows="20" cols="100"></textarea>
 		<h2>Stdin</h2>
 		<textarea onkeyup="stdinin(this)" id="stdin" rows="2" cols="100"></textarea>
-		<button style="margin-top: 10px;" onclick="" disabled>Run</button>
+		<button style="margin-top: 10px;" onclick="run()">Run</button>
 		<script>
 			let code = '';
 			let stdin = '';
@@ -34,23 +34,18 @@
 			}
 
 			run = () => {
-				code = code.replace(/\+/g, "%2b");
-				stdin = stdin.replace(/\+/g, "%2b");
+				var url = "http://54.180.53.84/run";
 
-				let param = {
-					"code": `${code}`,
-					"stdin": `${stdin}`,
-				}
+				var xhr = new XMLHttpRequest();
+				xhr.open("POST", url);
 
-				const request = new XMLHttpRequest();
-				const url = `http://54.180.53.84/run`;
-				request.open("POST", url);
-				request.setRequestHeader("Content-Type", "application/json")
-				request.send(param);
-	
-				request.onload = (e) => {
-					alert(request.response);
-				}
+				xhr.onreadystatechange = function () {
+				if (xhr.readyState === 4) {
+					console.log(xhr.responseText);
+				}};
+				
+				var data = `${code}!@#$%^&*()!@#$${stdin}`;
+				xhr.send(data);
 			}
 		</script>
 	</div>
