@@ -1,0 +1,126 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'), url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'), url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gmarket Sans Light'), local('GmarketSans-Light'), url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.black_background {
+    background-color: black;
+    color: white;
+}
+
+.white_background {
+    background-color: white;
+    color: black;
+}
+
+.theme_background {
+    background-color: #FF3598;
+    color: white;
+}
+
+.basic_font_family {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.gb_font_family {
+    font-family: 'Gmarket Sans Bold', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.gm_font_family {
+    font-family: 'Gmarket Sans Medium', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.gl_font_family {
+    font-family: 'Gmarket Sans Light', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.fullsize {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.font-light {
+    font-weight: lighter;
+}
+
+.font-bold {
+    font-weight: bolder;
+}
+
+.font-reg {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.nav_margin {
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_vertical_center {
+    display: flex;
+    align-items: center;
+}
+
+.flex_horizonal_center {
+    display: flex;
+    justify-content: center;
+}
+
+.sweet_morning {
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section1_a {
+    text-decoration: none;
+    transition: font-size 500ms ease-out 100ms;
+    color: white;
+    font-size: 1em;
+}
+
+.section1_a:hover {
+    font-size: 1.2em;
+}
