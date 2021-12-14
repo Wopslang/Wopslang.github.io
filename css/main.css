@@ -116,11 +116,30 @@
 
 .section1_a {
     text-decoration: none;
-    transition: font-size 500ms ease-out 20ms;
+    animation-iteration-count: 10;
     color: white;
     font-size: 1em;
+    transition: 0.3s;
+    padding: 0;
 }
 
 .section1_a:hover {
-    font-size: 1.1em;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+.nav_a {
+    text-decoration: none;
+    animation-iteration-count: 10;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.nav_a:hover {
+    color: black;
+    background-color: white;
+    padding: 10px;
 }
